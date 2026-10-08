@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultorio R2 - Turnero</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+
+    <header class="cabecera-principal">
+        <nav class="menu-principal">
+            <a class="enlace-inicio" href="./index.html">
+                <img class="logotipo" src="./img/diente.svg" alt="logotipo clinica"> 
+            </a>
+            <a href="./notificaciones.html">
+                <img class="icono" src="./img/correo.svg" alt="correo notificaciones"> 
+            <a href="./configuraciones.html">
+                <img class="icono" src="./img/engranaje.svg" alt="menu lateral configuraciones"> 
+            </a>        
+        </nav>
+    </header>
+
+    <main class="contenido-principal">  
+        <form class="formulario-seleccion" action="./profesional.html" method="post">
+            <h1>Seleccione tratamiento a realizar</h1>
+            <ul class="lista-opciones">
+                <li>
+                    <input type="radio" name="tratamiento" id="id-ortodoncia" value="ortodoncia">
+                    <label for="id-ortodoncia">Ortodoncia</label>
+                </li>
+                <li>
+                    <input type="radio" name="tratamiento" id="id-periodoncia" value="periodoncia">
+                    <label for="id-periodoncia">Periodoncia</label>
+                </li>
+                <li>
+                    <input type="radio" name="tratamiento" id="id-implante" value="implante">
+                    <label for="id-implante">Implante</label>
+                </li>
+                <li>
+                    <input type="radio" name="tratamiento" id="id-blanqueamiento" value="blanqueamiento">
+                    <label for="id-blanqueamiento">Blanqueamiento</label>
+                </li>
+                <li>
+                    <input type="radio" name="tratamiento" id="id-general" value="general">
+                    <label for="id-general">Odontologia general</label>
+                </li>
+            </ul>
+
+            <button type="submit">CONTINUAR</button>
+        </form>
+    </main>
+    
+    <footer class="pie-principal">
+        <ul class="redes-sociales">
+            <li>
+                <a href="https://instagram.com/@consultorioR2" target="_blank">
+                    @consultorioR2
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

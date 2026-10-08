@@ -1,0 +1,304 @@
+@font-face {
+    font-family: 'Lato';
+    src: url(./fuentes/Lato/Lato-Regular.ttf);
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url(./fuentes/Lato/Lato-Bold.ttf);
+    font-weight: 700;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', Arial, sans-serif;
+    font-size: 16px;
+}
+
+/*--tipo--*/
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f7fbfc;
+    color: #1d2b30;
+    line-height: 1.5;
+}
+
+h1 {
+    margin: 0 0 16px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #095c6b;
+}
+
+h2 {
+    margin: 0 0 16px;
+    font-size: 1.25rem;
+    text-align: center;
+    color: #095c6b;
+}
+
+p {
+    margin: 0 0 16px;
+}
+
+a {
+    color: #095c6b;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+input {
+    accent-color: #0b7285;
+}
+
+button {
+    padding: 12px 16px;
+    border: 2px solid #0b7285;
+    border-radius: 8px;
+    background-color: #0b7285;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/*--clase--*/
+.cabecera-principal {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background-color: #d3ebef;
+}
+
+.cabecera-principal .menu-principal {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+}
+
+.cabecera-principal .enlace-inicio {
+    margin-right: auto;
+}
+
+.cabecera-principal .logotipo {
+    width: 40px;
+    height: 40px;
+}
+
+.cabecera-principal .icono {
+    width: 32px;
+    height: 32px;
+}
+
+/*-- contenido principal*/
+.contenido-principal {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 24px 16px;
+}
+
+.contenido-principal .enlace-auxiliar {
+    margin-top: 16px;
+    text-align: center;
+}
+
+/*-- form principal*/
+.formulario-datos label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+.formulario-datos input {
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 10px 12px;
+    border: 1px solid #9cc9d2;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+
+.formulario-datos button {
+    width: 100%;
+    margin-top: 8px;
+}
+
+/*-- forms de eleccion*/
+.formulario-seleccion button {
+    width: 100%;
+}
+
+.lista-opciones {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+    list-style: none;
+}
+
+.lista-opciones li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    border: 1px solid #9cc9d2;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.lista-opciones label {
+    flex: 1;
+    cursor: pointer;
+}
+
+/*-- ficha profesional*/
+.ficha-profesional {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.ficha-profesional img {
+    grid-row: 1 / span 2;
+    width: 48px;
+    height: 48px;
+}
+
+.ficha-profesional .nombre {
+    font-weight: 700;
+}
+
+.ficha-profesional .matricula {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #4a5f66;
+}
+
+.lista-horarios {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+    list-style: none;
+}
+
+.lista-horarios li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 12px;
+    padding: 12px 16px;
+    border: 1px solid #9cc9d2;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.lista-horarios .dia {
+    flex-basis: 100%;
+    font-weight: 700;
+    color: #095c6b;
+}
+
+.lista-horarios label {
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+/*-- resumen del turno*/
+.resumen-turno {
+    margin: 0 0 24px;
+    padding: 16px;
+    border: 1px solid #9cc9d2;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.resumen-turno dt {
+    font-weight: 700;
+    color: #095c6b;
+}
+
+.resumen-turno dd {
+    margin: 0 0 12px;
+}
+
+/*-- lista de acciones (configuraciones)*/
+.lista-acciones {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+    list-style: none;
+}
+
+.lista-acciones button {
+    width: 100%;
+}
+
+    .boton-secundario {
+    background-color: #ffffff;
+    color: #095c6b;
+}
+
+/*-- pie principal*/
+.pie-principal {
+    padding: 16px;
+    background-color: #d3ebef;
+    text-align: center;
+}
+
+.pie-principal h2 {
+    font-size: 1.125rem;
+}
+
+.pie-principal .mapa-ubicacion {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    margin-bottom: 16px;
+    border: 0;
+}
+
+.pie-principal .redes-sociales {
+    list-style: none;
+}
+
+
+button:hover {
+    background-color: #095c6b;
+    border-color: #095c6b;
+    color: #ffffff;
+}
+
+.boton-secundario:hover {
+    background-color: #d3ebef;
+    border-color: #0b7285;
+    color: #095c6b;
+}
