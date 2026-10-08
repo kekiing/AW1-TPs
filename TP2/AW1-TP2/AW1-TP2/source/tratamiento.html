@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultorio R2 - Turnero</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="./index.html">
+                <img src="./img/diente.svg" alt="logotipo clinica"> <!--Poner foto de algun diente-->
+            </a>
+            <a href="./notificaciones.html">
+                <img src="./img/correo.svg" alt="correo notificaciones"> <!--Poner foto de sobre indicando DMs--> <!--Esto no lo modelamos en el mock up, preguntar a profe que onda si lo hacemos o lo dejamos asi-->
+            </a>
+            <a href="./configuraciones.html">
+                <img src="./img/engranaje.svg" alt="menu lateral configuraciones"> <!--Poner foto de ruedita/3 barras indicando configuraciones--> <!--Esto no lo modelamos en el mock up, preguntar a profe que onda si lo hacemos o lo dejamos asi-->
+            </a>        
+        </nav>
+    </header>
+
+    <main>  
+        <form action="./profesional.html" method="post">
+            <h1>Seleccione tratamiento a realizar</h1>
+            <ul>
+                <li>
+                    <input type="radio" name="tratamiento" id="id-ortodoncia" value="ortodoncia">
+                    <label for="id-ortodoncia">Ortodoncia</label>
+                </li>
+                <li>
+                    <input type="radio" name="tratamiento" id="id-periodoncia" value="periodoncia">
+                    <label for="id-periodoncia">Periodoncia</label>
+                </li>
+                <li>
+                    <input type="radio" name="tratamiento" id="id-implante" value="implante">
+                    <label for="id-implante">Implante</label>
+                </li>
+                <li>
+                    <input type="radio" name="tratamiento" id="id-blanqueamiento" value="blanqueamiento">
+                    <label for="id-blanqueamiento">Blanqueamiento</label>
+                </li>
+                <li>
+                    <input type="radio" name="tratamiento" id="id-general" value="general">
+                    <label for="id-general">Odontologia general</label>
+                </li>
+            </ul>
+
+            <button type="submit">CONTINUAR</button>
+        </form>
+    </main>
+    
+    <footer>
+        <ul>
+            <li>
+                <a href="https://instagram.com/@consultorioR2" target="_blank">
+                    @consultorioR2
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
