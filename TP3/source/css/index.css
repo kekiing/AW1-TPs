@@ -302,3 +302,33 @@ button:hover {
     border-color: #0b7285;
     color: #095c6b;
 }
+
+/*-- responsive */
+@media (min-width: 768px) {
+    .cabecera-principal {
+        padding: 12px 48px;
+    }
+
+    .contenido-principal {
+        max-width: 720px;
+    }
+
+    .formulario-datos { /*textos angostos para facilitar la lecutra*/
+        width: 100%;
+        max-width: 480px;
+        margin: 0 auto;
+    }
+
+    .lista-horarios {   /* los dias se apilan uno al lado del otro en vez de encimados */
+        flex-direction: row;
+    }
+
+    .lista-horarios li {
+        flex: 1;
+    }
+
+    .lista-horarios label { /*saca de las tarjetas angostas el margen para que los radios entren con su horario */
+        margin-right: 0;
+    }
+
+}
