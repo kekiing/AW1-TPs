@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>consultorio R2</title>
     <link rel="stylesheet" href="./css/index.css">
+    <script type="module" src="./js/listadoProfesionales.js"></script>
 </head>
 <body>
     
@@ -15,6 +16,7 @@
             </a>
             <a href="./notificaciones.html">
                 <img class="icono" src="./img/correo.svg" alt="correo notificaciones"> 
+            </a>
             <a href="./configuraciones.html">
                 <img class="icono" src="./img/engranaje.svg" alt="menu lateral configuraciones"> 
             </a>        
@@ -24,31 +26,8 @@
     <main class="contenido-principal">  
         <h1>Selecciona profesional disponible</h1>
         <form class="formulario-seleccion" action="./horario.html" method="post">
-            <ul class="lista-opciones">
-                <li>
-                    <input type="radio" name="profesional" id="id-prof1" value="prof1">
-                    <label class="ficha-profesional" for="id-prof1">
-                        <img src="./img/profesional.svg" alt="profesional 1"> <!--Buscar icono small y subir en la versional final-->
-                        <span class="nombre">Nombre</span>
-                        <span class="matricula">Matricula</span>
-                    </label>
-                </li>
-                <li>
-                    <input type="radio" name="profesional" id="id-prof2" value="prof2">
-                    <label class="ficha-profesional" for="id-prof2">
-                        <img src="./img/profesional.svg" alt="profesional 2"> <!--Buscar icono small y subir en la versional final-->
-                        <span class="nombre">Nombre</span>
-                        <span class="matricula">Matricula</span>
-                    </label>
-                </li>
-                <li>    
-                    <input type="radio" name="profesional" id="id-prof3" value="prof3">
-                    <label class="ficha-profesional" for="id-prof3">
-                        <img src="./img/profesional.svg" alt="profesional 3"> <!--Buscar icono small y subir en la versional final-->
-                        <span class="nombre">Nombre</span>
-                        <span class="matricula">Matricula</span>
-                    </label>
-                </li>
+            <ul class="lista-opciones" id="lista-profesionales">
+              <!-- Aca se rellenara con los profesionales disponibles mediante JS -->
 
             </ul>
 

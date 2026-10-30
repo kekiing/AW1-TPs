@@ -83,6 +83,13 @@ button {
     cursor: pointer;
 }
 
+/*--Agrego 29-10 boton deshabilitado (hasta elegir una opcion) */
+button:disabled {
+    background-color: #9cc9d2;
+    border-color: #9cc9d2;
+    cursor: not-allowed;
+}
+
 /*--clase--*/
 .cabecera-principal {
     display: flex;
