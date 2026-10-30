@@ -1,13 +1,13 @@
-// Traigo los datos del catalogo desde su modulo
+// traigo los datos del catalogo desde su modulo
 import { tratamientos } from "./datos/tratamientos.js";
 
-// Busco el <ul> donde van los tratamientos
+// busco el <ul> donde van los tratamientos
 const lista = document.querySelector("#lista-tratamientos");
 
-// 1. Un texto vacio donde voy a ir sumando el HTML
+// 1. un texto vacio donde voy a ir sumando el HTML
 let tratamientosHTML = ``;
 
-// 2. Por cada tratamiento, le sumo su <li>
+// 2. por cada tratamiento, le sumo su <li>
 tratamientos.forEach((tratamiento) => {
     tratamientosHTML += `
         <li>
@@ -17,16 +17,16 @@ tratamientos.forEach((tratamiento) => {
     `;
 });
 
-// 3. Meto todo el HTML dentro de la lista
+// 3. meto todo el HTML dentro de la lista
 lista.innerHTML = tratamientosHTML;
 
-// Busco el boton CONTINUAR
+// busco el boton CONTINUAR
 const boton = document.querySelector(".formulario-seleccion button");
 
-// Al cargar la pagina, el boton arranca deshabilitado
+// al cargar la pagina, el boton arranca deshabilitado
 boton.disabled = true;
 
-// Evento: cuando el paciente elige un tratamiento, se habilita el boton
+// evento: cuando el paciente elige un tratamiento, se habilita el boton
 lista.addEventListener("change", () => {
     boton.disabled = false;
 });
