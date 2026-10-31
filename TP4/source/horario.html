@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>consultorio R2</title>
     <link rel="stylesheet" href="./css/index.css">
+    <script type="module" src="./js/listadoHorarios.js"> </script>
 </head>
 <body>
 
@@ -15,6 +16,7 @@
             </a>
             <a href="./notificaciones.html">
                 <img class="icono" src="./img/correo.svg" alt="correo notificaciones"> 
+            </a>
             <a href="./configuraciones.html">
                 <img class="icono" src="./img/engranaje.svg" alt="menu lateral configuraciones"> 
             </a>        
@@ -27,32 +29,8 @@
 
         <form class="formulario-seleccion" action="./resumen.html" method="post">
 
-            
-            <ul class="lista-horarios">    
-                <li>
-                    <span class="dia">VIERNES</span>
-                    <input type="radio" name="turno" id="id-viernes10" value="viernes10">
-                    <label for="id-viernes10">10:00h</label>
-                    <input type="radio" name="turno" id="id-viernes15" value="viernes15">
-                    <label for="id-viernes15">15:00h</label>
-                </li>    
-
-                <li>
-                    <span class="dia">LUNES</span>
-                    <input type="radio" name="turno" id="id-lunes10" value="lunes10">
-                    <label for="id-lunes10">10:00h</label>
-                    <input type="radio" name="turno" id="id-lunes15" value="lunes15">
-                    <label for="id-lunes15">15:00h</label>
-                </li>  
-
-                <li>
-                    <span class="dia">MIERCOLES</span>
-                    <input type="radio" name="turno" id="id-miercoles10" value="miercoles10">
-                    <label for="id-miercoles10">10:00h</label>
-                    <input type="radio" name="turno" id="id-miercoles15" value="miercoles15">
-                    <label for="id-miercoles15">15:00h</label>
-                </li>  
-                
+            <ul class="lista-horarios" id="lista-horarios">
+                <!--se inyectan con JS-->
             </ul>
 
             <button type="submit">CONTINUAR</button>

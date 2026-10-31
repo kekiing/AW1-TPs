@@ -1,4 +1,5 @@
 import { profesionales } from "./datos/profesionales.js";
+import { habilitarBoton, guardarEleccion } from "./funciones.js";
 
 const lista = document.querySelector("#lista-profesionales");
 
@@ -14,3 +15,8 @@ profesionales.forEach((profesional) => {
 });
 
 lista.innerHTML = profesionalesHTML;
+
+const boton = document.querySelector(".formulario-seleccion button");
+habilitarBoton(lista, boton);
+
+guardarEleccion(lista, "profesional");

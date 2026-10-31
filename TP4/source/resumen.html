@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>consultorio R2</title>
     <link rel="stylesheet" href="./css/index.css">
+    <script type="module" src="./js/resumen.js"></script>
+    
 </head>
 <body>
     
@@ -15,6 +17,7 @@
             </a>
             <a href="./notificaciones.html">
                 <img class="icono" src="./img/correo.svg" alt="correo notificaciones"> 
+            </a>
             <a href="./configuraciones.html">
                 <img class="icono" src="./img/engranaje.svg" alt="menu lateral configuraciones"> 
             </a>        
@@ -25,13 +28,13 @@
         <h1>Resumen del turno creado</h1>
             <dl class="resumen-turno">
                 <dt>Tratamiento</dt>
-                <dd>Tratamiento</dd>
+                <dd id="resumen-tratamiento"></dd>
 
                 <dt>Profesional</dt>
-                <dd>Nombre del profesional</dd>
+                <dd id="resumen-profesional"></dd>
 
                 <dt>Fecha</dt>
-                <dd>Viernes 28/8 - 10:00h</dd>
+                <dd id="resumen-horario"></dd>
             </dl>
 
 
